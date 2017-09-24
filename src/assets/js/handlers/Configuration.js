@@ -5,7 +5,7 @@ define(function() {
         /**
          * Allowed Extension for Upload
          */
-        allowedExtensions: ['jpg'],
+        allowedExtensions: ['jpg', 'jpeg'],
 
         /**
          *
