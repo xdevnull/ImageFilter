@@ -1,6 +1,5 @@
 {
   "dependencies": {
-    "requirejs": "^2.3.5",
-    "vue": "^2.4.4"
+    "requirejs": "^2.3.5"
   }
 }

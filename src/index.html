@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="assets/css/app.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <header>
+        <img src="assets/img/logo.png"  width="40" height="40">
+        <p>xdevnull - Image filter</p>
+    </header>
+    <div class="container">
+
+        <!-- Usage Message -->
+        <div class="message">
+            <p><strong>Image Filter</strong> is simple image pixel manipulation project.</p>
+            <p>It was mainly created for learning purpose only!</p>
+            <p class="highlight">Browser Support/Performance were not taken into considerations.</p>
+        </div>
+
+        <!-- Image Uploading -->
+        <div class="image-uploader">
+            <p>Upload Image</p>
+
+            <div class="validation hidden"></div>
+            <form id="imageUploadForm">
+
+                <!-- File Selection -->
+                <div class="form-group">
+                    <label for="file">Image: </label>
+                    <input type="file" name="file" id="uploadedFile">
+                </div>
+
+                <!-- Filter Selection -->
+                <div class="form-group">
+                    <label for="filterList">Filter: </label>
+                    <select name="filterList" id="filterList">
+                        <option value="original">Original</option>
+                        <option value="greyscale">Greyscale</option>
+                        <option value="invert">Invert</option>
+                    </select>
+                </div>
+
+                <!-- Filter Options -->
+                <div class="form-group optional" id="filterOptionsFormGroup">
+                </div>
+
+                <!-- Apply Filter -->
+                <div class="form-group">
+                    <input type="submit" value="Apply filter">
+                </div>
+            </form>
+        </div>
+
+        <div id="result"></div>
+    </div>
+
+<script data-main="assets/js/app.js" src="../node_modules/requirejs/require.js"></script>
+</body>
+</html>
